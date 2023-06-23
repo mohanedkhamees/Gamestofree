@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import AddMovie from "./components/AddMovie";
+import GameCard from "./components/GameCard";
 import SearchPage from "./components/SearchPage";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blogs" element={<Home />} />
         <Route path="/Home" element={<Home />} />
-        <Route path="/projects" element={<AddMovie />} />
+        <Route path="/game/:id" element={<GameCard />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/contact" element={<App />} />
         {/* </Route> */}

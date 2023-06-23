@@ -1,0 +1,235 @@
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #dce1e5;
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    font-size: 14px;
+    color: #cfd6e1;
+    line-height: 1.5;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+* {
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.game-card {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    min-height: 300px;
+    display: block;
+    margin: 8vh auto;
+    border-radius: 8px;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+@media screen and (max-width: 800px) {
+    .game-card {
+        width: 95%;
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game-card {
+        background-position: 50% 0%;
+        background-size: cover;
+        height: 400px;
+    }
+}
+
+
+
+.game-card__overlay {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(42, 159, 255, 0.2) 0%, #36345a 60%, #e88de9 178%);
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .game-card__overlay {
+        background: linear-gradient(to bottom, rgba(42, 159, 255, 0.2) 0%, #36345a 60%, #e88de9 178%);
+    }
+}
+
+.game-card__share {
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
+    max-width: 130px;
+}
+
+@media screen and (max-width: 600px) {
+    .game-card__share {
+        display: block;
+        width: 100%;
+    }
+}
+
+.game-card__icon {
+    color: #ffffff;
+    mix-blend-mode: lighten;
+    opacity: 0.4;
+    background: none;
+    padding: 0;
+}
+
+
+
+.game-card__content {
+    width: 100%;
+    max-width: 370px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    float: right;
+    padding-right: 1.2em;
+    padding-bottom: 1em;
+    top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .game-card__content {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game-card__content {
+        margin-top: 4.2em;
+        width: 100%;
+        float: inherit;
+        max-width: 100%;
+        padding: 0 1em 1em;
+    }
+}
+
+.game-card__header {
+    margin-bottom: 1em;
+}
+
+.game-card__title {
+    color: #ffffff;
+    margin-bottom: 0.25em;
+    /* opacity: 0.75; */
+}
+
+.game-card__info {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    color: #ffffff;
+    line-height: 1;
+    margin: 2px;
+    font-weight: 700;
+    /* opacity: 0.5; */
+    padding-top: 8px;
+}
+
+.game-card__desc {
+    font-weight: 300;
+    /* opacity: 0.84; */
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", helvetica, arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+}
+
+.btn-outline {
+    background-color: #e88de99e;
+    font-weight: 400;
+    font-size: 12px;
+        border-radius: 20px;
+   
+}
+
+.btn::before {
+    font-family: "Material Icons";
+    content: "";
+    vertical-align: middle;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}
+
+.btn-outline:hover {
+    border-color: #2a9fff;
+    color: #2a9fff;
+    box-shadow: 0px 1px 8px 0px rgba(245, 199, 0, 0.2);
+}
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800'); */
+/* 
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+/* }  */ 
+
+ html,
+body {
+    margin: 0;
+    background: #36345a;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+} 
+
+ 

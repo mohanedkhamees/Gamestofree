@@ -6,24 +6,15 @@ const GameStore = ({ children }) => {
   const [current, setCurrent] = useState(0);
 
   const items = 12;
-  // const [games, setGames] = useState([]);
-  // const [search, setSearch] = useState([]);
-
-  // Page Number in Pagtione
 
   const startIndex = (current - 1) * items;
   const endIndex = current + items;
 
-  // how many game will loading in one page
-
   const GamePerPage = data.slice(current, endIndex);
-  // Options Label for Selecter
   const selectOptions = [
     { value: "", label: "All" },
     { value: "PC ", label: "PC" },
     { value: "Web", label: "Web" },
-    { value: "Shooter", label: "Shooter" },
-    { value: "Fighting", label: "Fighting" },
   ];
   const gernOptions = [
     { value: "", label: "All" },
