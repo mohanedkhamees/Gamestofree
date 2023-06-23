@@ -16,6 +16,7 @@ const SearchPage = () => {
           <label>Plattform</label>
           <Select
             className="basic-single"
+            classNamePrefix="basic-single"
             onChange={(search1) => {
               {
                 setSearch1(search1.value);

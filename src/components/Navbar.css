@@ -57,7 +57,6 @@ padding-top: 5px;
     height: 40px;
         width: 50px
 }
-.nav-elements {}
 
 .nav-elements ul {
     display: flex;
@@ -130,29 +129,8 @@ padding-top: 5px;
     }
 }
 .basic-single{
-&_singleValue{
-    color: red;
+    color: #f55ff7;
+    font-weight: 400;
+    
 }
-    &__menu {
-            margin: 0.125rem auto;
-            color: #000;
-        }
-    
-        &__option {
-                        color: #000;
-            background-color: white;
-    
-            &--is-focused {
-                background-color: lightblue;
-            }
-        }
-    
-        &__group {
-            padding: 0;
-        }
-    
-        &__menu-portal {
-            border: 1px solid darkblue;
-        }
 
-}
